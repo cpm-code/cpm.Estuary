@@ -165,7 +165,7 @@
 					<width>800</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31643]:[/COLOR] $INFO[VideoPlayer.AudioBitrate,, kb/s] $VAR[|] $INFO[VideoPlayer.VideoBitrate,, kb/s]</label>
+					<label>[COLOR button_focus]$LOCALIZE[31643] Mbs:[/COLOR] $INFO[Player.Process(audio.live.mibit.rate),,] $VAR[|] $INFO[Player.Process(video.live.mibit.rate),,]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -180,10 +180,11 @@
 				</control>
 				<control type="progress">
 					<description>CACHE BAR</description>
-					<label>test</label>
 					<width>400</width>
-					<height>18</height>
+					<height>8</height>
 					<info>Player.CacheLevel</info>
+					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
 				</control>
 				<control type="label"> <!-- Memory -->
 					<width>800</width>
@@ -196,8 +197,10 @@
 				<control type="progress">
 					<description>RAM BAR</description>
 					<width>400</width>
-					<height>18</height>
+					<height>8</height>
 					<info>system.memory(used)</info>
+					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
 				</control>
 				<control type="label"> <!-- CPU -->
 					<width>800</width>
@@ -211,9 +214,11 @@
 				<control type="progress">
 					<description>CPU BAR</description>
 					<width>400</width>
-					<height>18</height>
+					<height>8</height>
 					<info>System.CPUUsage</info>
 					<visible>System.SupportsCPUUsage</visible>
+					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
 				</control>
 			</control>
 			<!-- Player Middle -->
@@ -261,7 +266,7 @@
 					<width>800</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31650]:[/COLOR] $VAR[AudioCodec1Var] $VAR[AudioChannels1Var]$INFO[Player.Process(audio.is.dolby.atmos), ]</label>
+					<label>[COLOR button_focus]$LOCALIZE[31650]:[/COLOR] $VAR[AudioCodec1Var] $VAR[AudioChannels1Var]$INFO[Player.Process(audio.is.dolby.atmos), [COLOR lightgreen],[/COLOR]]$INFO[Player.Process(audio.dts.x.type), [COLOR lightgreen],[/COLOR]]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -352,6 +357,40 @@
 					<label>[COLOR button_focus]$LOCALIZE[31646]:[/COLOR] $INFO[System.CpuFrequency] $VAR[|] $INFO[System.CPUTemperature]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="progress">
+					<description>AUDIO QUEUE BAR</description>
+					<top>10</top>
+					<width>400</width>
+					<height>8</height>
+					<info>Player.Process(audio.queue.level)</info>
+					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
+				</control>
+				<control type="progress">
+					<description>AUDIO QUEUE DATA BAR</description>
+					<width>400</width>
+					<height>8</height>
+					<info>Player.Process(audio.queue.data.level)</info>
+					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
+				</control>
+				<control type="progress">
+					<description>VIDEO QUEUE BAR</description>
+					<top>10</top>
+					<width>400</width>
+					<height>8</height>
+					<info>Player.Process(video.queue.level)</info>
+					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
+				</control>
+				<control type="progress">
+					<description>VIDEO QUEUE DATA BAR</description>
+					<width>400</width>
+					<height>8</height>
+					<info>Player.Process(video.queue.data.level)</info>
+					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
+					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
 				</control>
 			</control>
 			<control type="grouplist" id="5550">
