@@ -1026,15 +1026,20 @@ msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml
 msgctxt "#31653"
-msgid "Dolby Vision"
+msgid "Dolby Vision Profile"
 msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml
-msgctxt "#31654
+msgctxt "#31654"
 msgid "VS10 mode"
 msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml
-msgctxt "#31655
+msgctxt "#31655"
 msgid "AML fps"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31656"
+msgid "Dolby Vision Metadata"
 msgstr ""
