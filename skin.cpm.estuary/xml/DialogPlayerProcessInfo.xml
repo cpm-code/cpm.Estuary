@@ -300,7 +300,7 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] (disabled)</label>
+					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] (off)</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!VideoPlayer.SubtitlesEnabled</visible>
