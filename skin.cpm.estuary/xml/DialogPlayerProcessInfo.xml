@@ -333,7 +333,17 @@
 					<width>480</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31653]:[/COLOR] Profile $VAR[DVProfileExtVar]$VAR[DVELVar, [COLOR lightgreen],[/COLOR]]$INFO[Player.Process(video.dovi.codec.string), [COLOR dimgrey][,][/COLOR]]</label>
+					<label>[COLOR button_focus]Dolby Vison Profile:[/COLOR] $VAR[DVProfileExtVar]$VAR[DVELVar, [COLOR lightgreen],[/COLOR]] $INFO[Player.Process(video.dovi.codec.string),[COLOR dimgrey][,][/COLOR]]</label>
+					<font>font12</font>
+					<shadowcolor>black</shadowcolor>
+					<visible>Player.HasVideo</visible>
+					<visible>String.Contains(Player.Process(video.hdr.type),dolby vision)</visible>
+				</control>
+				<control type="label"> <!-- Dolby Vision -->
+					<width>480</width>
+					<height>40</height>
+					<aligny>bottom</aligny>
+					<label>[COLOR button_focus]Dolby Vision Metadata:[/COLOR] $INFO[Player.Process(video.dovi.meta.version)]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
