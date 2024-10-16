@@ -971,12 +971,12 @@ msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml
 msgctxt "#31642"
-msgid "Video decoder|deinterlace"
+msgid "Video decoder|deint"
 msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml
 msgctxt "#31643"
-msgid "A|V bit rate"
+msgid "A|V bit rate Mbs"
 msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml

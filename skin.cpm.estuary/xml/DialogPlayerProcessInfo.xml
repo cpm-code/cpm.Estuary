@@ -165,7 +165,7 @@
 					<width>620</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31643] Mbs:[/COLOR] $INFO[Player.Process(audio.live.mibit.rate),,] $VAR[|] $INFO[Player.Process(video.live.mibit.rate),,]</label>
+					<label>[COLOR button_focus]$LOCALIZE[31643]:[/COLOR] $INFO[Player.Process(audio.live.mibit.rate),,] $VAR[|] $INFO[Player.Process(video.live.mibit.rate),,]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -300,7 +300,7 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] (off)</label>
+					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] [COLOR dimgrey][off][/COLOR]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!VideoPlayer.SubtitlesEnabled</visible>
