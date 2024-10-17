@@ -308,7 +308,7 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] [COLOR dimgrey][off][/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] $VAR[|] $INFO[VideoPlayer.SubtitlesLangEx]</label>
+					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] [COLOR dimgrey]$INFO[VideoPlayer.SubtitlesLanguage][/COLOR] $VAR[|] [COLOR dimgrey]$INFO[VideoPlayer.SubtitlesLangEx][/COLOR]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!VideoPlayer.SubtitlesEnabled</visible>
@@ -327,7 +327,7 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31657]:[/COLOR] [COLOR dimgrey][off][/COLOR] $INFO[VideoPlayer.SubtitlesName]</label>
+					<label>[COLOR button_focus]$LOCALIZE[31657]:[/COLOR] [COLOR dimgrey]$INFO[VideoPlayer.SubtitlesName][/COLOR]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!VideoPlayer.SubtitlesEnabled</visible>
