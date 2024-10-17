@@ -290,7 +290,7 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31652]:[/COLOR] $INFO[VideoPlayer.AudioLanguage]</label>
+					<label>[COLOR button_focus]$LOCALIZE[31652]:[/COLOR] $INFO[VideoPlayer.AudioLanguage] $VAR[|] $INFO[VideoPlayer.AudioLanguageEx]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
@@ -299,7 +299,7 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] $INFO[VideoPlayer.SubtitlesLanguage]</label>
+					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] $VAR[|] $INFO[VideoPlayer.SubtitlesLangEx]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.SubtitlesEnabled</visible>
@@ -308,10 +308,30 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] [COLOR dimgrey][off][/COLOR]</label>
+					<label>[COLOR button_focus]$LOCALIZE[21448]:[/COLOR] [COLOR dimgrey][off][/COLOR] $INFO[VideoPlayer.SubtitlesLanguage] $VAR[|] $INFO[VideoPlayer.SubtitlesLangEx]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!VideoPlayer.SubtitlesEnabled</visible>
+				</control>
+				<control type="label"> <!-- Subtitle name -->
+					<width>600</width>
+					<height>40</height>
+					<aligny>bottom</aligny>
+					<label>[COLOR button_focus]$LOCALIZE[31657]:[/COLOR] $INFO[VideoPlayer.SubtitlesName]</label>
+					<font>font12</font>
+					<shadowcolor>black</shadowcolor>
+					<visible>VideoPlayer.SubtitlesEnabled</visible>
+					<visible>!String.IsEmpty(VideoPlayer.SubtitlesName)</visible>
+				</control>
+				<control type="label">
+					<width>600</width>
+					<height>40</height>
+					<aligny>bottom</aligny>
+					<label>[COLOR button_focus]$LOCALIZE[31657]:[/COLOR] [COLOR dimgrey][off][/COLOR] $INFO[VideoPlayer.SubtitlesName]</label>
+					<font>font12</font>
+					<shadowcolor>black</shadowcolor>
+					<visible>!VideoPlayer.SubtitlesEnabled</visible>
+					<visible>!String.IsEmpty(VideoPlayer.SubtitlesName)</visible>
 				</control>
 			</control>
 			<!-- Player Right -->

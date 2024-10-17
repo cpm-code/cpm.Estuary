@@ -1043,3 +1043,8 @@ msgstr ""
 msgctxt "#31656"
 msgid "Dolby Vision Metadata"
 msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31657"
+msgid "Subtitle name"
+msgstr ""
