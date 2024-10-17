@@ -220,6 +220,14 @@
 					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 					<midtexture border="3" colordiffuse="button_focus">colors/white.png</midtexture>
 				</control>
+				<control type="label"> <!-- CPU -->
+					<width>620</width>
+					<height>40</height>
+					<aligny>bottom</aligny>
+					<label>[COLOR button_focus]$LOCALIZE[31646]:[/COLOR] $INFO[System.CpuFrequency] $VAR[|] $INFO[System.CPUTemperature]</label>
+					<font>font12</font>
+					<shadowcolor>black</shadowcolor>
+				</control>
 			</control>
 			<!-- Player Middle -->
 			<control type="grouplist">
@@ -377,14 +385,6 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
 					<visible>Player.Process(videohwdecoder)</visible>
-				</control>
-				<control type="label"> <!-- CPU -->
-					<width>480</width>
-					<height>40</height>
-					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31646]:[/COLOR] $INFO[System.CpuFrequency] $VAR[|] $INFO[System.CPUTemperature]</label>
-					<font>font12</font>
-					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="progress">
 					<description>AUDIO QUEUE BAR</description>
