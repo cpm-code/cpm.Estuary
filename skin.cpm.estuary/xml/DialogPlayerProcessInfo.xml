@@ -190,7 +190,7 @@
 					<width>620</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31645]:[/COLOR] $INFO[system.memory(used)] / $INFO[system.memory(total)] - $INFO[system.memory(used.percent)]</label>
+					<label>[COLOR button_focus]$LOCALIZE[31645]:[/COLOR] $INFO[system.memory(used.percent)] [COLOR dimgrey]([/COLOR]$INFO[system.memory(used)] [COLOR dimgrey]/[/COLOR] $INFO[system.memory(total)][COLOR dimgrey])[/COLOR]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
