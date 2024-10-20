@@ -303,6 +303,7 @@
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.SubtitlesEnabled</visible>
+					<visible>VideoPlayer.HasSubtitles</visible>
 				</control>
 				<control type="label">
 					<width>600</width>
@@ -312,6 +313,7 @@
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!VideoPlayer.SubtitlesEnabled</visible>
+					<visible>VideoPlayer.HasSubtitles</visible>
 				</control>
 				<control type="label"> <!-- Subtitle name -->
 					<width>600</width>
@@ -321,6 +323,7 @@
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.SubtitlesEnabled</visible>
+					<visible>VideoPlayer.HasSubtitles</visible>
 					<visible>!String.IsEmpty(VideoPlayer.SubtitlesName)</visible>
 				</control>
 				<control type="label">
@@ -331,6 +334,7 @@
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>!VideoPlayer.SubtitlesEnabled</visible>
+					<visible>VideoPlayer.HasSubtitles</visible>
 					<visible>!String.IsEmpty(VideoPlayer.SubtitlesName)</visible>
 				</control>
 			</control>
