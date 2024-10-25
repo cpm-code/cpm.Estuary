@@ -806,6 +806,18 @@
 		<value condition="String.Contains(Player.Process(video.dovi.el.type),full)">FEL</value>
 		<value condition="String.Contains(Player.Process(video.dovi.el.type),none)"></value>
 	</variable>
+	<variable name="RPUPresentVar">
+		<value condition="String.Contains(Player.Process(video.dovi.rpu.present),1)">Yes</value>
+		<value></value>
+	</variable>
+	<variable name="BLPresentVar">
+		<value condition="String.Contains(Player.Process(video.dovi.bl.present),1)">Yes</value>
+		<value></value>
+	</variable>
+	<variable name="ELPresentVar">
+		<value condition="String.Contains(Player.Process(video.dovi.el.present),1)">Yes</value>
+		<value></value>
+	</variable>
 	<variable name="DVProfileExtVar">
 		<value>$INFO[Player.Process(video.dovi.profile)].$INFO[Player.Process(video.dovi.bl.signal.compatibility)]</value>
 	</variable>
