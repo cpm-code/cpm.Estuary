@@ -137,14 +137,26 @@
 				<top>-204</top>
 				<visible>Control.HasFocus(5552)</visible>
 				<visible>String.IsEqual(Player.Process(video.dovi.has.config),1)</visible>
-				<control type="label"> <!-- DV Config -->
+				<control type="group"> <!-- DV Config -->
 					<width>500</width>
 					<height>40</height>
-					<aligny>bottom</aligny>
-					<align>left</align>
-					<label>[COLOR blue]Dolby Vision Configuration[/COLOR]</label>
-					<font>font12</font>
-					<shadowcolor>black</shadowcolor>
+					<control type="image">
+						<left>0</left>
+						<top>8</top>
+						<width>174</width>
+						<height>26</height>
+						<texture>dolby.vision.horizontal.small.png</texture>
+					</control>
+					<control type="label">
+						<left>185</left>
+						<width>300</width>
+						<height>40</height>
+						<aligny>bottom</aligny>
+						<align>left</align>
+						<label>[COLOR blue]Configuration[/COLOR]</label>
+						<font>font12</font>
+						<shadowcolor>black</shadowcolor>
+					</control>
 				</control>
 				<control type="group"> <!-- DV Version -->
 					<width>500</width>
@@ -373,14 +385,26 @@
 				<top>-204</top>
 				<visible>Control.HasFocus(5552)</visible>
 				<visible>String.IsEqual(Player.Process(video.dovi.has.header),1)</visible>
-				<control type="label">
-					<width>800</width>
+				<control type="group"> <!-- DV Levels Metadata -->
+					<width>500</width>
 					<height>40</height>
-					<aligny>bottom</aligny>
-					<align>left</align>
-					<label>[COLOR blue]Dolby Vision Levels Metadata[/COLOR]</label>
-					<font>font12</font>
-					<shadowcolor>black</shadowcolor>
+					<control type="image">
+						<left>0</left>
+						<top>8</top>
+						<width>174</width>
+						<height>26</height>
+						<texture>dolby.vision.horizontal.small.png</texture>
+					</control>
+					<control type="label">
+						<left>185</left>
+						<width>300</width>
+						<height>40</height>
+						<aligny>bottom</aligny>
+						<align>left</align>
+						<label>[COLOR blue]Levels Metadata[/COLOR]</label>
+						<font>font12</font>
+						<shadowcolor>black</shadowcolor>
+					</control>
 				</control>
 				<control type="group"> <!-- DV L6 MaxCLL/MaxFALL -->
 					<visible>String.IsEqual(Player.Process(video.dovi.has.l6),1)</visible>
@@ -677,14 +701,25 @@
 				<left>1320</left>
 				<top>-204</top>
 				<visible>Control.HasFocus(5552)</visible>
-				<control type="label">
+				<control type="group">
 					<width>700</width>
 					<height>40</height>
-					<aligny>bottom</aligny>
-					<align>left</align>
-					<label>[COLOR blue]HDR Static Metadata[/COLOR]</label>
-					<font>font12</font>
-					<shadowcolor>black</shadowcolor>
+					<control type="image">
+						<left>0</left>
+						<top>6</top>
+						<width>78</width>
+						<height>28</height>
+						<texture>hdr.10.small.png</texture>
+					</control>
+					<control type="label">
+						<left>90</left>
+						<width>500</width>
+						<height>40</height>
+						<aligny>bottom</aligny>
+						<align>left</align>
+						<label>[COLOR blue]Static Metadata[/COLOR]</label>
+						<font>font12</font>
+					</control>
 				</control>
 				<control type="group"> <!-- HDR MaxCLL/MaxFALL -->
 					<visible>String.IsEqual(Player.Process(video.hdr.has.cll),1)</visible>
