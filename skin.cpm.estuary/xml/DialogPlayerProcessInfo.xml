@@ -1056,11 +1056,11 @@
 			</control>
 			<!-- Player Right -->
 			<control type="grouplist">
-				<left>1380</left>
+				<left>1360</left>
 				<top>-204</top>
 				<visible>Control.HasFocus(5553)</visible>
 				<control type="label"> <!-- Display mode -->
-					<width>480</width>
+					<width>500</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[32100]:[/COLOR] $INFO[Player.Process(amlogic.displaymode)]</label>
@@ -1069,7 +1069,7 @@
 					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="label"> <!-- EOTF & Gamut -->
-					<width>480</width>
+					<width>500</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[32101]:[/COLOR] $INFO[Player.Process(amlogic.eoft_gamut)]</label>
@@ -1078,7 +1078,7 @@
 					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="label"> <!-- Dolby Vision Profile -->
-					<width>480</width>
+					<width>500</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[31653]:[/COLOR] $VAR[DVProfileExtVar]$VAR[DVELVar, ] $INFO[Player.Process(video.dovi.codec.string),[COLOR dimgrey][,][/COLOR]]</label>
@@ -1088,7 +1088,7 @@
 					<visible>String.Contains(Player.Process(video.hdr.type),dolby vision)</visible>
 				</control>
 				<control type="label"> <!-- Dolby Vision Metadata -->
-					<width>480</width>
+					<width>500</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[31656]:[/COLOR] $INFO[Player.Process(video.dovi.meta.version)]</label>
@@ -1098,7 +1098,7 @@
 					<visible>String.Contains(Player.Process(video.hdr.type),dolby vision)</visible>
 				</control>
 				<control type="label"> <!-- VS10 mode -->
-					<width>480</width>
+					<width>500</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[31654]:[/COLOR] $VAR[DVVS10Var]</label>
@@ -1108,7 +1108,7 @@
 					<visible>!String.Contains(Player.Process(amlogic.vs10.mode),bypass)</visible>
 				</control>
 				<control type="label"> <!--Pixel format -->
-					<width>480</width>
+					<width>500</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[31140]:[/COLOR] $INFO[Player.Process(amlogic.pixformat)]$VAR[DVTunnelVar, [COLOR dimgrey][,][/COLOR]]</label>
@@ -1117,7 +1117,7 @@
 					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="label"> <!-- AML fps -->
-					<width>480</width>
+					<width>500</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR button_focus]$LOCALIZE[31655]:[/COLOR] $INFO[Player.Process(amlogic.video.fps.info)][COLOR orange]$INFO[Player.Process(amlogic.video.fps.drop),	-&gt; ][/COLOR]</label>
@@ -1128,7 +1128,7 @@
 				</control>
 				<control type="progress">
 					<description>AUDIO QUEUE BAR</description>
-					<width>480</width>
+					<width>500</width>
 					<height>8</height>
 					<info>Player.Process(audio.queue.level)</info>
 					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
@@ -1136,7 +1136,7 @@
 				</control>
 				<control type="progress">
 					<description>AUDIO QUEUE DATA BAR</description>
-					<width>480</width>
+					<width>500</width>
 					<height>8</height>
 					<info>Player.Process(audio.queue.data.level)</info>
 					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
@@ -1144,7 +1144,7 @@
 				</control>
 				<control type="progress">
 					<description>VIDEO QUEUE BAR</description>
-					<width>480</width>
+					<width>500</width>
 					<height>8</height>
 					<info>Player.Process(video.queue.level)</info>
 					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
@@ -1152,7 +1152,7 @@
 				</control>
 				<control type="progress">
 					<description>VIDEO QUEUE DATA BAR</description>
-					<width>480</width>
+					<width>500</width>
 					<height>8</height>
 					<info>Player.Process(video.queue.data.level)</info>
 					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
