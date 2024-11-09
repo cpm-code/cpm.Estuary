@@ -701,6 +701,7 @@
 				<left>1320</left>
 				<top>-204</top>
 				<visible>Control.HasFocus(5552)</visible>
+				<visible>String.IsEqual(Player.Process(video.hdr.has.cll),1) | String.IsEqual(Player.Process(video.hdr.has.mdcv),1)</visible>
 				<control type="group">
 					<width>700</width>
 					<height>40</height>
