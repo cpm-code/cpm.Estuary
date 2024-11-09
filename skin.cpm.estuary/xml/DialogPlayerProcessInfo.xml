@@ -947,7 +947,7 @@
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
-					<visible>String.IsEqual(Player.Process(video.source.additional.hdr.type), "SDR")</visible>
+					<visible>String.IsEqual(Player.Process(video.source.additional.hdr.type.raw),0)</visible>
 				</control>
 				<control type="label"> <!-- Video source type -->
 					<width>600</width>
@@ -957,7 +957,7 @@
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>
-					<visible>!String.IsEqual(Player.Process(video.source.additional.hdr.type), "SDR")</visible>
+					<visible>!String.IsEqual(Player.Process(video.source.additional.hdr.type.raw),0)</visible>
 				</control>
 				<control type="label"> <!-- Video encoding -->
 					<width>600</width>
