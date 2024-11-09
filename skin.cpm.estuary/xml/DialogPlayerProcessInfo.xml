@@ -1179,10 +1179,10 @@
 					<onfocus>SetProperty(PlayerInfoDialogFocus,5551,Home)</onfocus>
 				</control>
 				<control type="button" id="5552">
-					<visible>String.Contains(Player.Process(video.dovi.has.config),1) | 
-					         String.Contains(Player.Process(video.dovi.has.header),1) | 
-					         String.Contains(Player.Process(video.hdr.type),dolby vision) | 
-					         String.Contains(Player.Process(video.hdr.type),hdr)
+					<visible>String.IsEqual(Player.Process(video.dovi.has.config),1) |
+					         String.IsEqual(Player.Process(video.dovi.has.header),1) |
+							 String.IsEqual(Player.Process(video.hdr.has.cll),1) |
+							 String.IsEqual(Player.Process(video.hdr.has.mdcv),1)
 					</visible>
 					<width>auto</width>
 					<height>100</height>
