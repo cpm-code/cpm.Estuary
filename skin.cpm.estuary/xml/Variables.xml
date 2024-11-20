@@ -338,6 +338,10 @@
 		<value condition="Control.HasFocus(804)">$LOCALIZE[33061]</value>
 		<value condition="Control.HasFocus(70011)">$LOCALIZE[31124]</value>
 		<value condition="Control.HasFocus(70012)">Player Debug</value>
+		<value condition="Control.HasFocus(70013)">Original</value>
+		<value condition="Control.HasFocus(70014)">VS10 SDR</value>
+		<value condition="Control.HasFocus(70015)">VS10 HDR10</value>
+		<value condition="Control.HasFocus(70016)">VS10 Dolby Vision</value>
 		<value condition="Control.HasFocus(70040)">$LOCALIZE[19019]</value>
 		<value condition="Control.HasFocus(70041)">$LOCALIZE[19069]</value>
 		<value condition="Control.HasFocus(70042)">$LOCALIZE[31065]</value>
