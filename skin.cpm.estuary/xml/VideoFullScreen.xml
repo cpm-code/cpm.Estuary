@@ -104,11 +104,16 @@
 			</include>
 			<include content="VideoCodecFlag">
 				<param name="groupId">48</param><param name="imageId">49</param>
-				<param name="visible">Integer.IsEqual(Player.Process(video.source.hdr.type.raw),3)</param>
+				<param name="visible">Integer.IsEqual(Player.Process(video.source.hdr.type.raw),3) + !String.IsEqual(Player.Process(video.dovi.el.type),full)</param>
 				<param name="texture">codecs/Dolby_Vision.png</param>
 			</include>
 			<include content="VideoCodecFlag">
 				<param name="groupId">50</param><param name="imageId">51</param>
+				<param name="visible">Integer.IsEqual(Player.Process(video.source.hdr.type.raw),3) + String.IsEqual(Player.Process(video.dovi.el.type),full)</param>
+				<param name="texture">codecs/Dolby_Vision_FEL.png</param>
+			</include>
+			<include content="VideoCodecFlag">
+				<param name="groupId">52</param><param name="imageId">53</param>
 				<param name="visible">Integer.IsEqual(Player.Process(video.source.hdr.type.raw),4)</param>
 				<param name="texture">codecs/HLG.png</param>
 			</include>
