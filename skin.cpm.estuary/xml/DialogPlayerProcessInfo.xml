@@ -1006,7 +1006,7 @@
 					<width>600</width>
 					<height>40</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR button_focus]$LOCALIZE[31650]:[/COLOR] $VAR[AudioCodec1Var] $VAR[AudioChannels1Var]$INFO[Player.Process(audio.is.dolby.atmos), [COLOR lightgreen],[/COLOR]]$INFO[Player.Process(audio.dts.x.type), [COLOR lightgreen],[/COLOR]]</label>
+					<label>[COLOR button_focus]$LOCALIZE[31650]:[/COLOR] $VAR[AudioCodec1Var] $VAR[AudioChannels1Var] $VAR[ObjectAudio]</label>
 					<font>font12</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
