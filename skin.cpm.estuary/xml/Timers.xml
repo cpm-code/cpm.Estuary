@@ -15,4 +15,12 @@
         <reset>Player.Seeking | Player.Forwarding | Player.Rewinding | Player.HasPerformedSeek(1)</reset>
         <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(1109_topbaroverlay),5) | Player.Playing</stop>
     </timer>
+	<timer>
+		<name>fullscreenresolutioninfotimer</name>
+		<description>Shows videoresolution (HDR, HLG, DV, and Audio) Icons on start</description>
+		<start reset="true">Window.IsVisible(1111)</start>
+        <stop>Window.IsVisible(1111) + [Integer.IsGreater(Skin.TimerElapsedSecs(fullscreenresolutioninfotimer),8) + String.IsEqual(Skin.String(show_videoresolution),31661)] | [Integer.IsGreater(Skin.TimerElapsedSecs(fullscreenresolutioninfotimer),10) + String.IsEqual(Skin.String(show_videoresolution),31662)] | [Integer.IsGreater(Skin.TimerElapsedSecs(fullscreenresolutioninfotimer),15) + String.IsEqual(Skin.String(show_videoresolution),31663)]</stop>
+		<reset>!Window.IsVisible(1111)</reset>
+		<onstop>Dialog.Close(1111)</onstop>
+	</timer>
 </timers>
