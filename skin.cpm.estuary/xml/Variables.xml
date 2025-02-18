@@ -909,4 +909,11 @@
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)">[COLOR lightgreen]DTS:X[/COLOR]</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)">[COLOR lightgreen]IMAX[/COLOR]</value>
 	</variable>
+	<variable name="ShowVideoResolutionVar">
+		<value condition="String.IsEqual(Skin.String(show_videoresolution),31659)">$LOCALIZE[31659]</value>
+		<value condition="String.IsEqual(Skin.String(show_videoresolution),31661)">$LOCALIZE[31661]</value>
+		<value condition="String.IsEqual(Skin.String(show_videoresolution),31662)">$LOCALIZE[31662]</value>
+		<value condition="String.IsEqual(Skin.String(show_videoresolution),31663)">$LOCALIZE[31663]</value>
+		<value>$LOCALIZE[31664]</value>
+	</variable>
 </includes>

@@ -799,3 +799,153 @@ msgstr "Kijelző mód"
 msgctxt "#32101"
 msgid "EOTF & Gamut"
 msgstr "EOTF & Gamut"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31630"
+msgid "System FPS"
+msgstr "Rendszer FPS"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31631"
+msgid "CPU frequency"
+msgstr "CPU frekvencia"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31632"
+msgid "SoC temp"
+msgstr "SoC hőmérséklet"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31633"
+msgid "Video stream cache"
+msgstr "Videó előtöltés"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31634"
+msgid "Player"
+msgstr "Lejátszó"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31635"
+msgid "Video source type"
+msgstr "Videó forrás típus"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31641"
+msgid "Kodi fps"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31642"
+msgid "Video decoder|deint"
+msgstr "Videó dekóder"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31643"
+msgid "A|V bit rate Mbps"
+msgstr "A|V bitráta Mbps"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31644"
+msgid "Cache"
+msgstr "Előtöltés"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31645"
+msgid "Memory"
+msgstr "Memória"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31646"
+msgid "CPU"
+msgstr "CPU"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31647"
+msgid "Video source type"
+msgstr "Videó forrás típus"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31648"
+msgid "Video encoding"
+msgstr "Videó kódolás"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31649"
+msgid "Video colour"
+msgstr "Videó színtér"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31650"
+msgid "Audio encoding"
+msgstr "Hang kodek"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31651"
+msgid "Audio sampling"
+msgstr "Hangmintavétel"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31652"
+msgid "Audio language"
+msgstr "Szinkron nyelv"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31653"
+msgid "Dolby Vision Profile"
+msgstr "Dolby Vision Profil"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31654"
+msgid "VS10 mode"
+msgstr "VS10 mód"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31655"
+msgid "AML fps"
+msgstr "AML fps"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31656"
+msgid "Dolby Vision Metadata"
+msgstr "Dolby Vision Metaadat"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31657"
+msgid "Subtitle name"
+msgstr "Felirat neve"
+
+#: /xml/SkinSettings.xml
+msgctxt "#31658"
+msgid "Show AV codecs when the Video starts"
+msgstr "AV kodek mutatása videóindításkor"
+
+#: /xml/SkinSettings.xml
+msgctxt "#31659"
+msgid "disabled"
+msgstr "letiltva"
+
+#: /xml/SkinSettings.xml
+msgctxt "#31660"
+msgid "5 seconds"
+msgstr "5 másodperc"
+
+#: /xml/SkinSettings.xml
+msgctxt "#31661"
+msgid "7 seconds"
+msgstr "7 másodperc"
+
+#: /xml/SkinSettings.xml
+msgctxt "#31662"
+msgid "10 seconds"
+msgstr "10 másodperc"
+
+#: /xml/SkinSettings.xml
+msgctxt "#31663"
+msgid "15 seconds"
+msgstr "15 másodperc"
+
+#: /xml/SkinSettings.xml
+msgctxt "#31664"
+msgid "Not defined"
+msgstr "Nincs meghatározva"

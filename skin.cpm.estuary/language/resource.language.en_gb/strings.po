@@ -1049,3 +1049,38 @@ msgstr ""
 msgctxt "#31657"
 msgid "Subtitle name"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31658"
+msgid "Show AV codecs when the Video starts"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31659"
+msgid "disabled"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31660"
+msgid "5 seconds"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31661"
+msgid "7 seconds"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31662"
+msgid "10 seconds"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31663"
+msgid "15 seconds"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#31664"
+msgid "Not defined"
+msgstr "

@@ -303,6 +303,18 @@
 					<onclick>Skin.SetNumeric(OSDAutoCloseTime)</onclick>
 					<enable>Skin.HasSetting(OSDAutoClose)</enable>
 				</control>
+				<control type="button" id="6241">
+					<label>$LOCALIZE[31658]</label>
+					<label2>$VAR[ShowVideoResolutionVar]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEmpty(Skin.String(show_videoresolution))">Skin.SetString(show_videoresolution,31659)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(show_videoresolution),31663)">Skin.SetString(show_videoresolution,31659)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(show_videoresolution),31662)">Skin.SetString(show_videoresolution,31663)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(show_videoresolution),31661)">Skin.SetString(show_videoresolution,31662)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(show_videoresolution),31660)">Skin.SetString(show_videoresolution,31661)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(show_videoresolution),31659)">Skin.SetString(show_videoresolution,31660)</onclick>
+					<onclick condition="!String.IsEmpty(Skin.String(show_videoresolution)) + !String.IsEqual(Skin.String(show_videoresolution),31659) + !String.IsEqual(Skin.String(show_videoresolution),31660) + !String.IsEqual(Skin.String(show_videoresolution),31661) + !String.IsEqual(Skin.String(show_videoresolution),31662) + !String.IsEqual(Skin.String(show_videoresolution),31663)">Skin.SetString(show_videoresolution,31578)</onclick>
+                </control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
