@@ -1800,4 +1800,122 @@
 			</control>
 		</definition>
 	</include>
+	<include name="SpeakerBox">
+		<param name="left">0</param>
+		<param name="top">0</param>
+		<param name="label">?</param>
+		<param name="active">false</param>
+		<param name="size">70</param>
+		<param name="width">$PARAM[size]</param>
+		<param name="height">$PARAM[size]</param>
+		<param name="shape">box</param>
+		<param name="angle">0</param>
+		<param name="centerleft">0</param>
+		<param name="centertop">0</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<angle>$PARAM[angle]</angle>
+				<centerleft>$PARAM[centerleft]</centerleft>
+				<centertop>$PARAM[centertop]</centertop>
+
+				<!-- Active (green) - box -->
+				<control type="image">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<texture border="6">colors/white.png</texture>
+					<colordiffuse>lightgreen</colordiffuse>
+					<visible>$PARAM[active] + String.IsEqual($PARAM[shape],box)</visible>
+				</control>
+
+				<!-- Active (green) - circle -->
+				<control type="image">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<texture>shapes/circle_fill.png</texture>
+					<colordiffuse>18FFFFFF</colordiffuse>
+					<visible>$PARAM[active] + String.IsEqual($PARAM[shape],circle)</visible>
+				</control>
+				<control type="image">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<texture>shapes/circle_ring.png</texture>
+					<colordiffuse>lightgreen</colordiffuse>
+					<visible>$PARAM[active] + String.IsEqual($PARAM[shape],circle)</visible>
+				</control>
+				<!-- (no inner highlight: Kodi skin XML doesn't support inline math for sizes) -->
+
+				<!-- Inactive (dim) - box -->
+				<control type="image">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<texture border="6">colors/white50.png</texture>
+					<colordiffuse>28FFFFFF</colordiffuse>
+					<visible>!$PARAM[active] + String.IsEqual($PARAM[shape],box)</visible>
+				</control>
+
+				<!-- Inactive (dim) - circle -->
+				<control type="image">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<texture>shapes/circle_fill.png</texture>
+					<colordiffuse>10FFFFFF</colordiffuse>
+					<visible>!$PARAM[active] + String.IsEqual($PARAM[shape],circle)</visible>
+				</control>
+				<control type="image">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<texture>shapes/circle_ring.png</texture>
+					<colordiffuse>30FFFFFF</colordiffuse>
+					<visible>!$PARAM[active] + String.IsEqual($PARAM[shape],circle)</visible>
+				</control>
+
+				<!-- Indicator dot -->
+				<control type="image">
+					<right>6</right>
+					<top>6</top>
+					<width>10</width>
+					<height>10</height>
+					<texture border="3">colors/white.png</texture>
+					<colordiffuse>lightgreen</colordiffuse>
+					<visible>$PARAM[active]</visible>
+				</control>
+				<control type="image">
+					<right>6</right>
+					<top>6</top>
+					<width>10</width>
+					<height>10</height>
+					<texture border="3">colors/white.png</texture>
+					<colordiffuse>30FFFFFF</colordiffuse>
+					<visible>!$PARAM[active]</visible>
+				</control>
+
+				<!-- Label -->
+				<control type="label">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>$PARAM[active]</visible>
+				</control>
+				<control type="label">
+					<width>$PARAM[width]</width>
+					<height>$PARAM[height]</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[COLOR dimgrey]$PARAM[label][/COLOR]</label>
+					<font>font12</font>
+					<shadowcolor>black</shadowcolor>
+					<visible>!$PARAM[active]</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
 </includes>

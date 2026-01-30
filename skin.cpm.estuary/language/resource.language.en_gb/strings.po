@@ -660,6 +660,21 @@ msgctxt "#31140"
 msgid "Pixel format"
 msgstr ""
 
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31290"
+msgid "Audio"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31291"
+msgid "Stream speaker layout"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31292"
+msgid "ALSA speaker layout"
+msgstr ""
+
 #: /xml/DialogAddonInfo.xml
 msgctxt "#31141"
 msgid "Changes for version"
