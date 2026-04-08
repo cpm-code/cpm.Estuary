@@ -1,3 +1,7 @@
+[B]4.1.0[/B]
+• Sync with upstream Estuary 4.1.0
+• Preserve cpm-specific customizations and CoreELEC enhancements
+
 [B]0.8.5[/B]
 • Updated language files from Transifex
 

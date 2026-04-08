@@ -392,6 +392,10 @@
 		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
 		<value>$INFO[ListItem.Label]$INFO[ListItem.Year, ([COLOR grey],[/COLOR])]</value>
 	</variable>
+	<variable name="VideoInfoPlotVar">
+		<value condition="!String.IsEmpty(ListItem.Tagline) | !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Tagline,[B][I],[/I][/B][CR]]$INFO[ListItem.Plot]</value>
+		<value condition="String.IsEqual(ListItem.DBType,season)">$INFO[Container.ShowPlot]</value>
+	</variable>
 	<variable name="VideoInfoPlayButtonLabelVar">
 		<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,set)">$LOCALIZE[1024]</value>
 		<value>$LOCALIZE[208]</value>
@@ -567,6 +571,9 @@
 		<value condition="Container.Content(videoversions)">$LOCALIZE[40210]</value>
 		<value condition="Container.Content(videoextras)">$LOCALIZE[40211]</value>
 		<value>$LOCALIZE[40209]</value>
+	</variable>
+	<variable name="PVRInstanceName">
+		<value condition="Integer.IsGreater(PVR.ClientCount,1)">$INFO[ListItem.PVRClientName,[COLOR grey]$LOCALIZE[31137]:[/COLOR] ,]$INFO[ListItem.PVRInstanceName, (,)]</value>
 	</variable>
 	<variable name="RepeatButtonColordiffuseVar">
 		<value condition="Control.HasFocus(704)">button_focus</value>
